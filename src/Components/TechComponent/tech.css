@@ -26,12 +26,14 @@
     float: left;
 
 }
+
 .cardStyle1 {
     width: 40%;
     height: 400px;
     float: left;
     margin: 15px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    /* background-color: aqua; */
 
 }
 @media screen and (width< 1050px) {
@@ -42,8 +44,18 @@
     }
     .cardStyle1 {
         width: 100%;
-    }
+    }  
     .TechContainer-right{
-        width: 95%;
+        width: 100%;
     }
+}
+@media screen and (width< 700px)
+{
+    .TechContainer-left{
+        display: block;
+    }
+    .cardStyle1{
+        height: auto;
+    }
+    
 }
