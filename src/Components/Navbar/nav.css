@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Notable&family=Noto+Serif+Khojki&display=swap');
 
 body {
-  /* margin: 0; */
   width: 90%;
   margin: auto;
 }
@@ -29,19 +28,7 @@ body {
   height: 25px;
 }
 
-.topnav a:hover {
-  color: var(--red);
-}
 
-.topnav a.active {
-  color: var(--red);
-
-
-}
-
-.topnav .icon {
-  display: none;
-}
 
 #NavRightElements {
   width: 830px;
@@ -85,7 +72,6 @@ body {
 #NavLogoText {
   font-family: 'Noto Serif Khojki', serif;
   font-size: 20px;
-  /* margin-top: 15px; */
   color: var(--red);
   float: left;
   padding: 0px 0px;
@@ -94,16 +80,23 @@ body {
 
 }
 
+
+@media screen and (width< 700px){
+  #NavLogo {
+    font-size: 29px;
+  }
+  #NavLogoText {
+    font-size: 16px;
+  }
+}
 @media screen and (max-width: 1300px) {
   .LogoAlign{
     width: 100%;
   }
   #NavRightElements {
     width: 98%;
-    
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     overflow-x: scroll;
     overflow-y: hidden;
   }
