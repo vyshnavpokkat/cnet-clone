@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Notable&family=Noto+Serif+Khojki&display=swap');
+
+body {
+  /* margin: 0; */
+  width: 90%;
+  margin: auto;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: var(--white);
+  position: sticky;
+  top: 0;
+  border-bottom: 2px solid var(--hrcolor);
+  z-index: 1;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: var(--black);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  margin-top: 25px;
+  width: auto;
+  height: 25px;
+}
+
+.topnav a:hover {
+  color: var(--red);
+}
+
+.topnav a.active {
+  color: var(--red);
+
+
+}
+
+.topnav .icon {
+  display: none;
+}
+
+#NavRightElements {
+  width: 830px;
+  height: 90px;
+  float: right;
+  margin-top: -6rem;
+  text-align: center;
+}
+#NavRightElements::-webkit-scrollbar{
+  display: none;
+}
+
+@media screen and (max-width: 1300px) {
+  #NavRightElements {
+    width: 98%;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin-top: -3rem;
+  }
+}
+
+.LogoAlign{
+  margin-top: 20px;
+  width: 500px;
+  height: 89px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#NavLogo {
+  font-family: 'Notable', sans-serif;
+  font-size: 40px;
+  float: left;
+  color: var(--red);
+  margin-right: 15px;
+
+}
+
+#NavLogoText {
+  font-family: 'Noto Serif Khojki', serif;
+  font-size: 20px;
+  /* margin-top: 15px; */
+  color: var(--red);
+  float: left;
+  padding: 0px 0px;
+  margin-top: -10px;
+  font-weight: 500;
+
+}
+
+@media screen and (max-width: 1300px) {
+  .LogoAlign{
+    width: 100%;
+  }
+  #NavRightElements {
+    width: 98%;
+    
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+}

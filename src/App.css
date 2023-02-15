@@ -1,0 +1,18 @@
+
+:root{
+  --white:#fbfbfb;
+  --red:#FF0000;
+  --dark:#3d3d3d;
+  --black:#000000;
+  --hrcolor:#878787b5;
+}
+body{
+  background-color: var(--white);
+}
+strong:hover{
+  color: var(--red);
+  cursor: pointer;
+  }
+img{
+  cursor: pointer;
+}

@@ -1,0 +1,49 @@
+.TechContainer{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-bottom: 2px solid var(--hrcolor);
+}
+.HeadContent{
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--dark);
+    margin-left: 40px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.TechContainer-left{
+    width: 45%;
+    min-height: 500px;
+    height: auto;
+    float: left;
+}
+.TechContainer-right{
+    width: 50%;
+    min-height: 500px;
+    height: auto;
+    margin: 1rem;
+    float: left;
+
+}
+.cardStyle1 {
+    width: 40%;
+    height: 400px;
+    float: left;
+    margin: 15px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+}
+@media screen and (width< 1050px) {
+    .TechContainer-left{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .cardStyle1 {
+        width: 100%;
+    }
+    .TechContainer-right{
+        width: 95%;
+    }
+}

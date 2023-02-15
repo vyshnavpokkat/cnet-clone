@@ -1,0 +1,52 @@
+.Addcontainer {
+    width: 100%;
+    height: 250px;
+    height: auto;
+    text-align: justify;
+}
+
+#AddTextMain {
+    color: var(--dark);
+    font-weight: bold;
+    font-size: 45px;
+    margin-top: 2rem;
+}
+
+#AddTextSub {
+    font-size: 20px;
+    margin-bottom: 2rem;
+}
+
+#AddElements {
+    color: black;
+    width: 100%;
+    min-height: 30px;
+    height: auto;
+    text-align: left;
+    border-bottom: 2px solid var(--hrcolor);
+
+}
+#AddElements::-webkit-scrollbar{
+    display: none;
+}
+
+#AddElements a {
+    margin: 1rem;
+}
+#AddElements a:hover {
+    color: var(--red);
+}
+@media screen and (max-width: 1300px) {
+    #AddTextMain {
+        font-size: 30px;
+    }
+    #AddTextSub {
+        font-size: 15px;
+    }
+    #AddElements {
+        display: flex;
+        align-items: center;
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+}
